@@ -26,7 +26,7 @@ function gotResult(error, results) {
       synth.speak(utterThis);
 
       document.getElementById("result_object_name").innerHTML = results[0].label;
-      document.getElementById("result_object_accuracy").innerHTML = results[0].confidence.tofixed(3);
+      document.getElementById("result_object_accuracy").innerHTML = results[0].confidence.toFixed(3);
     }
   }
 }
